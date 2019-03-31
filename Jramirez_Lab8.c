@@ -118,6 +118,7 @@ void randomizer(int maxSides) // All the randomizing will be done in this functi
 		puts("                        Ready?! Here we go!!!");
 		puts("                        Rolling...");
 		suspendTime(); //Pause for dramatic effect of course
+		printf("                      You rolled a 1 on a %d-sided die!\n", maxSides);
 		puts("        Yikes, you got a 1, the lowest possible outcome, how unlucky!"); //lowest possible outconme
 	}
 	else if (randNum == sides)
@@ -125,6 +126,7 @@ void randomizer(int maxSides) // All the randomizing will be done in this functi
 		puts("                        Ready?! Here we go!!!");
 		puts("                        Rolling...");
 		suspendTime();
+		printf("				      You rolled a %d on a %d-sided die! \n",randNum, maxSides);
 		printf("    Wow, you got %d the highest possible outcome, go buy a lottery ticket!\n", randNum); //highest outcome
 	}
 	else
@@ -132,7 +134,7 @@ void randomizer(int maxSides) // All the randomizing will be done in this functi
 		puts("                        Ready?! Here we go!!!");
 		puts("                        Rolling...");
 		suspendTime();
-		printf("                      You've rolled a %d!\n", randNum);
+		printf("                      You've rolled a %d on a %d-sided die!\n", randNum, maxSides);
 
 	}
 }
